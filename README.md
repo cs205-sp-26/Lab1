@@ -10,7 +10,7 @@ In this lab you will be getting started with the tools (and people) that you wil
 2. Getting your laptop configured;
 3. Getting to know the shell;
 4. Secure Shell (SSH) public / private keys;
-5. Password-less SSH
+
 
 ## Due Date
 
@@ -29,8 +29,6 @@ Determine who your lab partner will be for the semester. We'll do this as a grou
 You might also consider finding a lab partner who plans to use the same OS (Mac/Windows/Linux) as you for this course.
 
 ## 2. Start setting up your local machine
-
-This semester you will be connecting to a remote machine for development from your local laptop or desktop. The remote machines have been configured with everything you need in this course. Accordingly, *these remote machines will be considered the standard for all code written in this course.* All of your assignments will be run and graded on the remote machines. Thus, you are strongly encouraged to test your assignments on the remote machines. For your convenience, you will also configure your local machine for development.
 
 Follow these instructions, depending on your OS, to start the process of configuring your local machine:
 
@@ -111,7 +109,7 @@ My reccomendation in this course is for you to use `WSL`. You should be aware th
 
 ## 4. Getting started with SSH
 
-Secure Shell (SSH) is a type of terminal, allowing you to use another machine on the Internet via encrypted communication. In this course you will use ssh to communicate with the department's remote development server. You will also use your ssh credentials to access code stored on GitHub.
+Secure Shell (SSH) is a type of terminal, allowing you to use another machine on the Internet via encrypted communication. In this course you will use your ssh credentials to access code stored on GitHub.
 
 ### Generating public/private key pairs
 
@@ -140,12 +138,15 @@ Do not enter a password. If you add a password at any point, you will need to en
 
 *It is very important to remember, each account will have it’s own key pairing. So if you are using different terminals in Windows, each terminal is seen as a different account and is a different pairing. The same is true if you are working on different machines, you will need to establish “a different” authentication for each machine. This is often a point of confusion for new users.*
 
+
+
+### Important note: All steps shown from here until the section Git are for your information only. You will not perform any of these in this class 
 ### Installing public keys on machines you want to access
 
 The `ssh` program allows you to run commands on a remote machine. The most basic way of doing this is to execute the following.
 
 ```
-ssh 139.147.9.XXX #Where XXX are the last three digits of the ip address provided by your instructor.
+ssh 139.147.9.XXX #Where XXX are the last three digits of the ip address you want to connect to.
 ```
 
 The above command will start a terminal on a different computer 139.147.9.XXX and allow you to perform any text-based command interactively.
@@ -158,27 +159,9 @@ The example above did not have a specified ID, instead the ID of the account you
 ssh different-id@139.147.9.XXX # if only text based programs will be used
 ```
 
-### Test it out
-
-**Ask your instructor for credentials and ip address for logging in to the remote machine for you and your partner.**
-
-Use the provided credentials to ssh to that machine.
-
-```
-ssh USERNAME@139.147.9.XXX
-```
-
-Enter your password. (If prompted by MobaXterm to save your password, politely decline. We'll set up password-less authentication next.)
-
-You should now be connected to the lab machine! Type the `exit` command or (Ctrl-d) to return to your local terminal.
-
-## 5. Password-less  `ssh`
-
-It can be annoying, inefficient and insecure to rely on password-based authentication.
-
 ### Secure Copy (`scp`)
 
-To set up a password-less connection to the lab machine, you will need to move your public ssh key to the lab machine. The `scp` tool can move files between machines from the command line.
+To set up a password-less connection to a remote machine, you will need to move your public ssh key to that machine. The `scp` tool can move files between machines from the command line.
 
 ```
 #scp <source> <destination>
@@ -189,7 +172,7 @@ Here the location of the computer also includes a file system specification, whi
 
 ### Moving your public key and setting up the server
 
-To be able to complete the remote login process without providing any password, you will need to move a copy of the `id_rsa.pub` file. Use `scp` to copy this file from your local machine to your home directory on the lab server. Run the following command, replacing the USERNAMEs and XXX with your specific information.
+To be able to complete the remote login process without providing any password, you will need to move a copy of the `id_rsa.pub` file. Use `scp` to copy this file from your local machine to your home directory on the potential server. Run the following command, replacing the USERNAMEs and XXX with your specific information.
 
 ```
 scp ~/.ssh/id_rsa.pub USERNAME@139.147.9.XXX:/home/USERNAME
@@ -225,7 +208,7 @@ should not be asked for a password.
 
 ## Lab goals
 
-In this continuation of Lab 1a, you will be working with Git, which is a fast, scalable, distributed version control system with a rich command set that provides both high-level operations and full access to internals. It lets you share a developing resource to which one or more people can contribute over time. Through specific commands, it stores things as a sequence of changes, allowing you the ability to comment on changes that are being made. If two developers are contributing to the same piece of code, then commit (submit) these pieces of code, Git will facilitate combining (merging) the code.
+In this part of the lab you will be working with Git, which is a fast, scalable, distributed version control system with a rich command set that provides both high-level operations and full access to internals. It lets you share a developing resource to which one or more people can contribute over time. Through specific commands, it stores things as a sequence of changes, allowing you the ability to comment on changes that are being made. If two developers are contributing to the same piece of code, then commit (submit) these pieces of code, Git will facilitate combining (merging) the code.
 
 The general structure of a git repository is that there are multiple repositories, where one git repository starts as the origin and additional repositories are "cloned." Clones are called working repositories and belong to the developer working in/on their personal, local environment/machine. This allows each developer to do their own work without being connected to the originating repository, but then occasionally sync up the work being done.
 
@@ -274,14 +257,8 @@ This problem may reemerge when you restart your machine and/or terminal. If it d
 
 
 ## 4. Summary of your configuration so far
-Having completed the steps so far, you can now ssh from your local machine to your lab account on the department's server. You can also push and pull code from GitHub via ssh. Congratulations! 
+Having completed the steps so far, you can now push and pull code from your local machine to GitHub via ssh. Congratulations! 
 
-The following diagram depicts what you have configured so far:
-```
----------------------      ssh      ---------------------
-| Your Local Machine|   <--------> | user@139.147.9.XXX  |
----------------------               ---------------------
-```
 
 The following diagram depicts what you have configured so far:
 ```
