@@ -246,3 +246,27 @@ file.
 - Test that your key is working by exiting out of the machines where you installed the key and then logging back it. You
 should not be asked for a password.
 - You should do this for all machines that you plan use for this course, and in the future.
+
+### What to Submit (Due Monday, February 3 at 5pm)
+
+Create a Markdown or plain text file named `lab1a-summary.md` and include the following:
+
+1. **Lab Partner Info**  
+   - Name and email of your lab partner (or indicate you are working solo)
+
+2. **Setup Notes**  
+   - List your operating system (Mac, Windows + WSL, or Linux)  
+   - Confirm that you've installed any required tools (Xcode, Homebrew, WSL, etc.)
+
+3. **Shell Practice**  
+   - Paste the output of the commands you practiced (e.g., `cat hello.txt`, `ls`, etc.)  
+   - Name the three additional shell commands you tried and briefly describe what each does
+
+4. **SSH Key Generation**  
+   - Confirm that you successfully generated your SSH key pair (you do **not** need to share the keys)  
+   - Paste the names of the two generated files (e.g., `id_rsa`, `id_rsa.pub`)  
+
+5. **Questions**  
+   - Do you have any questions so far? Add them here!
+
+Submit this file to your GitHub Classroom repository for Lab 1a. If you get stuck, commit what you can and leave a note in the file.
