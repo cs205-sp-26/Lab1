@@ -107,6 +107,49 @@ My reccomendation in this course is for you to use `WSL`. You should be aware th
 - **`awk`** and **`sed`**: Magic commands for extracting, searching, and transforming content.
 - **`nano`**: A simple command-line text editor.
 
+
+
+##### PRACTICE
+
+Try these in your terminal (use WSL, Mac Terminal, or a Linux shell):
+
+1. **Create a practice directory and navigate into it:**
+   ```bash
+   mkdir shell-practice
+   cd shell-practice
+   ```
+
+2. **Create a file named `hello.txt` and write your name into it:**
+   ```bash
+   echo "Your Name" > hello.txt
+   ```
+
+3. **Copy `hello.txt` to a new file called `hello-copy.txt`:**
+   ```bash
+   cp hello.txt hello-copy.txt
+   ```
+
+4. **Append the current date to `hello.txt`:**
+   ```bash
+   date >> hello.txt
+   ```
+
+5. **Display the contents of `hello.txt`:**
+   ```bash
+   cat hello.txt
+   ```
+
+6. **Clean up: remove the entire folder:**
+   ```bash
+   cd ..
+   rm -r shell-practice
+   ```
+
+7. **Try three more commands not included here (OK to use google or GPT)**
+
+
+
+
 ## 4. Getting started with SSH
 
 Secure Shell (SSH) is a type of terminal, allowing you to use another machine on the Internet via encrypted communication. In this course you will use your ssh credentials to access code stored on GitHub.
