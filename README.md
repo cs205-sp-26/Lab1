@@ -1,4 +1,4 @@
-# Lab 1b — Getting Started and SSH
+# Lab 1a — Getting Started and SSH
 
 ----------------------
 
