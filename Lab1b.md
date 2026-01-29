@@ -83,9 +83,7 @@ mkdir labs    # Make a new dir for the repo
 cd labs       # Move to the new dir
 ```
 
-Now follow [these instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) to clone your team's lab-1b repository. **Make sure to select "ssh" option instead of "https" when copying the link.**
-
-The instructions linked above conclude with you running the following command on your local machine:
+Now clone your team's by running the following command on your local machine:
 ```
 git clone git@github.com:cs205-sp-26/lab-1b-YOUR-USER-NAME.git
 
@@ -95,10 +93,12 @@ git clone git@github.com:cs205-sp-26/lab-1b-YOUR-USER-NAME.git
 ## IMPORTANT NOTE: If you are working with a partner, you need to make sure that you both clone the same repo!!! Decide what repo will be the shared one and share the username with your partner. To guarantee that your partner can clone the repo, the owner of the repository needs to go to Settings -> Collaborators and Teams and add the username of the partner. Make sure that you give them Admin privileges to your repo.
 
 ```
-For example for me this is: 
+
+For example, if Mr. X and I are in the same team, we both will type the command below. I will also make sure to go to my Github.com profile and add Mr. X in my lab-1b-jorgeSilveyra repo as an admin. 
 
 git clone git@github.com:cs205-sp-26/lab-1b-jorgeSilveyra.git
 ```
+
 
 To confirm that everything was cloned correctly:
 
