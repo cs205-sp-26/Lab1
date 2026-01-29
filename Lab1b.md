@@ -96,7 +96,9 @@ For example for me this is:
 
 git clone git@github.com:cs205-sp-26/lab-1b-jorgeSilveyra.git
 ```
+
 To confirm that everything was cloned correctly:
+
 ```
 cd lab-1b-YOURUSERNAME
 ls          
@@ -107,6 +109,14 @@ You can also test running the shell script:
 ```
 ./test.sh
 ```
+
+If you get an error running the file, make sure that you change the permissions first. A command like the one below can fix it: 
+
+```
+chmod +x test.sh
+```
+
+
 
 The next step is to make your Git repository aware of who you are, to be able to identify you in the changes you will be making. Both lab partners should execute the following commands with their respective information.
 
