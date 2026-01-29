@@ -92,7 +92,7 @@ git clone git@github.com:cs205-sp-26/lab-1b-YOUR-USER-NAME.git
 ```
 
 
-###IMPORTANT NOTE: If you are working with a partner, you need to make sure that you both clone the same repo!!! Decide what repo will be the shared one and share the username with your partner. To guarantee that your partner can clone the repo, the owner of the repository needs to go to settings -> Collaborators and Teams and add the username of the partner. Make sure that you give them Admin privileges to your repo.
+## IMPORTANT NOTE: If you are working with a partner, you need to make sure that you both clone the same repo!!! Decide what repo will be the shared one and share the username with your partner. To guarantee that your partner can clone the repo, the owner of the repository needs to go to Settings -> Collaborators and Teams and add the username of the partner. Make sure that you give them Admin privileges to your repo.
 
 ```
 For example for me this is: 
