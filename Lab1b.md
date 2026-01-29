@@ -87,9 +87,15 @@ Now follow [these instructions](https://docs.github.com/en/repositories/creating
 
 The instructions linked above conclude with you running the following command on your local machine:
 ```
-git clone git@github.com:YOUR_USER_NAME_HERE/lab-1b.git
+git clone git@github.com:cs205-sp-26/lab-1b-YOUR-USER-NAME.git
+
 ```
 
+```
+For example for me this is: 
+
+git clone git@github.com:cs205-sp-26/lab-1b-jorgeSilveyra.git
+```
 To confirm that everything was cloned correctly:
 ```
 cd lab-1b
