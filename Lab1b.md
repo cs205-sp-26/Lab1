@@ -98,7 +98,7 @@ git clone git@github.com:cs205-sp-26/lab-1b-jorgeSilveyra.git
 ```
 To confirm that everything was cloned correctly:
 ```
-cd lab-1b
+cd lab-1b-YOURUSERNAME
 ls          
 >README.md  test.sh #You should now see these three files
 ```
